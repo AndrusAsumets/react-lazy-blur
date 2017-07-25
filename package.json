@@ -1,8 +1,8 @@
 {
   "name": "react-lazy-blur",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Lazy background image loader for React.js",
+  "main": "./src/js/components/react-lazy-blur.js",
   "scripts": {
     "blur": "node scripts/blur.js",
     "dev": "node scripts/development.js",
