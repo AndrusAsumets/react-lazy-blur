@@ -1,0 +1,51 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+	min-width: 100vw;
+	overflow-x: hidden;
+}
+
+.app {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.react-lazy-blur {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.react-lazy-blur:hover > .link-container {
+	opacity: 1;
+}
+
+.react-lazy-blur,
+.react-lazy-blur .background,
+.react-lazy-blur .blur{
+	min-width: calc(100vw / 3);
+	min-height: calc(100vh / 3);
+}
+
+.react-lazy-blur .background,
+.react-lazy-blur .blur {
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.link-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+
+.link {
+	padding: 8px;
+	background-color: white;
+	font-family: monospace;
+}
