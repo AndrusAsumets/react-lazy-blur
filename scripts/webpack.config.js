@@ -29,7 +29,7 @@ var config = {
             },
             {
                 test: /\.(jpe?g)(\?.*)?$/,
-                exclude: /(.lazy|.blur)/,
+                //exclude: /(.lazy|.blur)/,
                 loader: 'url-loader?limit=10000',
                 query: {
                     name: '/build/static/media/[name].[ext]'
