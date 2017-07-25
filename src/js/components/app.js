@@ -144,6 +144,11 @@ class App extends Component {
                     </div>
                 </ReactLazyBlur>
                 
+                <div
+                	className="octocat"
+                	onClick= { () => { window.open('https://github.com/AndrusAsumets/react-lazy-blur', '_blank') } }>
+                </div>
+                
             </div>
         )
     }

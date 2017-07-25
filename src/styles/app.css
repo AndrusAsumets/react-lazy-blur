@@ -49,3 +49,17 @@ body {
 	background-color: white;
 	font-family: monospace;
 }
+
+.octocat {
+	position: fixed;
+	bottom: 16px;
+	right: 16px;
+	width: 64px;
+	height: 64px;
+	background-image: url("./../images/Octocat.jpg");
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 64px;
+	cursor: pointer;
+}
