@@ -28,18 +28,17 @@ var config = {
                 exclude: /node_modules/
             },
             {
-                test: /\.(jpe?g)(\?.*)?$/,
-                //exclude: /(.lazy|.blur)/,
-                loader: 'url-loader?limit=10000',
+                test: /(.lazy)/,
+                loader: 'file-loader?limit=1000000',
+                exclude: /node_modules/,
                 query: {
                     name: '/build/static/media/[name].[ext]'
                 }
             },
-            
             {
-                test: /(.lazy|.blur)/,
-                loader: 'url-loader?limit=1000000',
-                exclude: /node_modules/
+                test: /\.(jpe?g)(\?.*)?$/,
+                exclude: /(.lazy)/,
+                loader: 'url-loader?limit=10000'
             }
         ]
     },
