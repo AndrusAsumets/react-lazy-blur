@@ -108,10 +108,3 @@ export default class ReactLazyBlur extends Component {
         )
     }
 }
-
-ReactLazyBlur.propTypes = {
-	className: React.PropTypes.string,
-    background: React.PropTypes.string.isRequired,
-    blur: React.PropTypes.string,
-    children: React.PropTypes.node
-}
