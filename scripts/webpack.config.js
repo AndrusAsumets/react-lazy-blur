@@ -9,8 +9,8 @@ var config = {
         './src/js/index.js'
     ],
     output: {
-        path: __dirname,
-        filename: path.join('build', 'bundle.min.js')
+        path: path.join(__dirname, '../', 'build'),
+        filename: 'bundle.min.js'
     },
     resolve: {
         extensions: ['*', '.js', '.jsx']
@@ -20,7 +20,7 @@ var config = {
             {
                 test: /\.js?$/,
                 exclude: /(node_modules|bower_components)/,
-                loaders: ['babel-loader'],
+                loaders: ['babel-loader',]
             },
             {
                 test: /\.css$/,
@@ -28,24 +28,20 @@ var config = {
                 exclude: /node_modules/
             },
             {
-                test: /(.lazy)/,
-                loader: 'file-loader?limit=1000000',
-                exclude: /node_modules/,
-                query: {
-                    name: '/build/static/media/[name].[ext]'
-                }
+                test: /\B.lazy\B/,
+			    loader: 'file-loader'
             },
             {
                 test: /\.(jpe?g)(\?.*)?$/,
-                exclude: /(.lazy)/,
+                exclude: /\B.lazy\B/,
                 loader: 'url-loader?limit=10000'
             }
         ]
     },
     plugins: [
-        new ExtractTextPlugin('build/bundle.min.css'),
+        new ExtractTextPlugin('bundle.min.css'),
         new CopyWebpackPlugin([
-            { from: 'src/html/index.production.html', to: 'build/index.html' }
+            { from: 'src/html/index.production.html', to: 'index.html' }
         ])
     ]
 }
