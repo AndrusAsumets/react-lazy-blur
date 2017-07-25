@@ -29,10 +29,16 @@ var config = {
             },
             {
                 test: /\.(jpe?g)(\?.*)?$/,
+                exclude: /(.lazy|.blur)/,
                 loader: 'url-loader?limit=10000',
                 query: {
                     name: '/build/static/media/[name].[ext]'
                 }
+            },
+            {
+                test: /(.lazy|.blur)/,
+                loader: 'url-loader?limit=1000000',
+                exclude: /node_modules/
             }
         ]
     },
