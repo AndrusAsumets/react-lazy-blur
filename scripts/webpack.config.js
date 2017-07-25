@@ -35,6 +35,7 @@ var config = {
                     name: '/build/static/media/[name].[ext]'
                 }
             },
+            
             {
                 test: /(.lazy|.blur)/,
                 loader: 'url-loader?limit=1000000',
