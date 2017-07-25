@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-  	"blur": "node scripts/blur.js",
+    "blur": "node scripts/blur.js",
     "dev": "node scripts/development.js",
     "build": "webpack --config scripts/webpack.config.js",
     "publish": "node scripts/publish.js"
