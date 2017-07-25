@@ -11,7 +11,7 @@ const process = async function(i) {
 		
 		console.log('Blurring:', folder + file)
 		const image = await Jimp.read(folder + file).catch((err) => { return console.log(err) })
-		image.resize(128, Jimp.AUTO)
+		image.resize(32, Jimp.AUTO)
 		image.blur(10)
 		
 		const prefix = file.split('.lazy.')[0]
