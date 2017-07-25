@@ -12,7 +12,7 @@ const process = async function(i) {
 		console.log('Blurring:', folder + file)
 		const image = await Jimp.read(folder + file).catch((err) => { return console.log(err) })
 		image.resize(128, Jimp.AUTO)
-		image.blur(16)
+		image.blur(10)
 		
 		const prefix = file.split('.lazy.')[0]
 		const suffix = file.split('.lazy.')[1]
