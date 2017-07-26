@@ -31,17 +31,17 @@ import ReactLazyBlur from 'react-lazy-blur'
 ```
 
 ## Props
-`background` (string, required): Import an image string and pass it as an argument.
-`blur` : (string, optional) Import a processed and blurred background image and use it as a placeholder while the full-sized image is being prefetched.
-`duration`: (integer, optional) The length of fade after prefetching the image in milliseconds. Defaults to 500ms.
-`horizontal`: (boolean, optional) Trigger prefetching when element is being displayed horizontally. Defaults to false.
-`children`: (component, optional) React.js component or a HTML element.
+`background` (string, required): Import an image string and pass it as an argument.  
+`blur` : (string, optional) Import a processed and blurred background image and use it as a placeholder while the full-sized image is being prefetched.  
+`duration`: (integer, optional) The length of fade after prefetching the image in milliseconds. Defaults to 500ms.  
+`horizontal`: (boolean, optional) Trigger prefetching when element is being displayed horizontally. Defaults to false.  
+`children`: (component, optional) React.js component or a HTML element.  
 
 ## Blurring / Contributing
-`npm install`
-`npm run blur` (blur.js is situated in /scripts folder will scan for images containing .lazy tag inside file names (but ignores the rest), then converts said files into small and blurry (look for images including .blur tags).
-`npm run dev`
-`npm run build` (optional)
+`npm install`  
+`npm run blur` (blur.js is situated in /scripts folder will scan for images containing .lazy tag inside file names (but ignores the rest), then converts said files into small and blurry (look for images including .blur tags).  
+`npm run dev`  
+`npm run build` (optional)  
 
 ## License:
 Do What the Fuck You Want To Public License
