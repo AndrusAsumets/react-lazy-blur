@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import Waypoint from 'react-waypoint'
 
-export default class ReactLazyBlur extends Component {
+export default class ReactLazyBlur extends React.Component {
     constructor(props) {
         super(props)
 
         this.state = {
-        	waypoint: false,
+			waypoint: false,
             blur: {},
             background: {},
             loaded: false
