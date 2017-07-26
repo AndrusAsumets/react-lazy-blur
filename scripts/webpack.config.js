@@ -41,7 +41,8 @@ var config = {
     plugins: [
         new ExtractTextPlugin('bundle.min.css'),
         new CopyWebpackPlugin([
-            { from: 'src/html/index.production.html', to: 'index.html' }
+            { from: 'src/html/index.production.html', to: 'index.html' },
+            { from: 'src/images/share.blur.png', to: 'share.blur.png' }
         ])
     ]
 }
