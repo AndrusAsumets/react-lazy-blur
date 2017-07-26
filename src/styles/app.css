@@ -12,9 +12,7 @@ body {
 }
 
 .react-lazy-blur {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	position: relative;
 }
 
 .react-lazy-blur:hover > .link-container {
@@ -36,9 +34,9 @@ body {
 }
 
 .link-container {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	position: absolute;
+	top: 16px;
+	right: 16px;
 	cursor: pointer;
 	opacity: 0;
 	transition: opacity 0.5s;
