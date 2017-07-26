@@ -1,14 +1,13 @@
 {
   "name": "react-lazy-blur",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "The laziest image loader for React.js",
   "main": "./bin/index.js",
   "scripts": {
     "blur": "node scripts/blur.js",
     "dev": "node scripts/development.js",
     "build": "webpack --config scripts/webpack.config.js",
-    "prepublish": "webpack --config scripts/webpack.prepublish.config.js",
-    "publish": "node scripts/publish.js"
+    "publish": "webpack --config scripts/webpack.prepublish.config.js && node scripts/publish.js"
   },
   "author": "Andrus Asumets / andrus@asumets.ee / http://asumets.ee",
   "license": "WTFPL",
