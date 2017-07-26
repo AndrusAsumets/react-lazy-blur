@@ -21,9 +21,7 @@ export default class ReactLazyBlur extends React.Component {
     }
 
     lazy() {
-        const {
-            background,
-            blur
+        const { background, blur
         } = this.props
         const duration = this.props.duration || 500
         const self = this
@@ -79,44 +77,29 @@ export default class ReactLazyBlur extends React.Component {
     }
 
     render() {
-        const {
-            className,
-            children
-        } = this.props
-        const {
-            background,
-            blur,
-            waypoint
-        } = this.state
+        const { className, children } = this.props
+        const { background, blur, waypoint } = this.state
         
-        return (
-		<span>
-
-			<Waypoint onEnter={() => { this.setState({ waypoint: true }) }} scrollableAncestor={ window } />
-
-			{
-				waypoint ?
-					<div className={ 'react-lazy-blur ' + className } style={{ position: 'relative' }}>
-						<span>
-						<div className={ 'react-lazy-blur background' } style={ background }>
-						    { children }
-						</div>
-
-						{
-						    !this.state.loaded ?
-							<div className={ 'react-lazy-blur blur' } style={ Object.assign({ position: 'absolute', top: 0 }, blur )}>
-							    { children }
-							</div>
-						    : null
-						}
-						</span>
+		return (
+			<span>
+				<Waypoint onEnter={() => { this.setState({ waypoint: true }) }} scrollableAncestor={ window } />
+				
+				<div className={ 'react-lazy-blur ' + className } style={{ position: 'relative' }}>
+					<div className={ 'react-lazy-blur background' } style={ background }>
+						{ children }
 					</div>
-				: null
-			}
-
-			<Waypoint onEnter={() => { this.setState({ waypoint: true }) }} scrollableAncestor={ window } />
-
-		</span>
-        )
+				
+					{
+						!this.state.loaded ?
+							<div className={ 'react-lazy-blur blur' } style={ Object.assign({ position: 'absolute', top: 0 }, blur )}>
+								{ children }
+							</div>
+						: null
+					}
+				</div>
+				
+				<Waypoint onEnter={() => { this.setState({ waypoint: true }) }} scrollableAncestor={ window } />
+			</span>
+		)
     }
 }
