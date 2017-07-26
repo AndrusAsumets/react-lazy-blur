@@ -6,7 +6,7 @@ export default class ReactLazyBlur extends Component {
         super(props)
 
         this.state = {
-        	waypoint: false,
+			waypoint: false,
             blur: {},
             background: {},
             loaded: false
