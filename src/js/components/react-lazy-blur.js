@@ -88,82 +88,35 @@ export default class ReactLazyBlur extends React.Component {
             blur,
             waypoint
         } = this.state
-
-        return ( <
-            span >
-
-            <
-            Waypoint onEnter = {
-                () => {
-                    this.setState({
-                        waypoint: true
-                    })
-                }
-            }
-            scrollableAncestor = {
-                window
-            }
-            />
-
-            {
-                waypoint ?
-                    <
-                    div className = {
-                        'react-lazy-blur ' + className
-                    }
-                style = {
-                        {
-                            position: 'relative'
-                        }
-                    } >
-                    <
-                    span >
-                    <
-                    div className = {
-                        'react-lazy-blur background'
-                    }
-                style = {
-                        background
-                    } > {
-                        children
-                    } <
-                    /div>
-
-                {
-                    !this.state.loaded ?
-                        <
-                        div className = {
-                            'react-lazy-blur blur'
-                        }
-                    style = {
-                            Object.assign({
-                                position: 'absolute',
-                                top: 0
-                            }, blur)
-                        } > {
-                            children
-                        } <
-                        /div>: null
-                } <
-                /span> <
-                /div>: null
-            }
-
-            <
-            Waypoint onEnter = {
-                () => {
-                    this.setState({
-                        waypoint: true
-                    })
-                }
-            }
-            scrollableAncestor = {
-                window
-            }
-            />
-
-            <
-            /span>
+        
+        return (
+        		<span>
+        	
+	        		<Waypoint onEnter={() => { this.setState({ waypoint: true }) }} scrollableAncestor={ window } />
+	        		
+	        		{
+	        			waypoint ?
+	        				<div className={ 'react-lazy-blur ' + className } style={{ position: 'relative' }}>
+			        			<span>
+					                <div className={ 'react-lazy-blur background' } style={ background }>
+					                    { children }
+					                </div>
+					
+					                {
+					                    !this.state.loaded ?
+					                        <div className={ 'react-lazy-blur blur' } style={ Object.assign({ position: 'absolute', top: 0 }, blur )}>
+					                            { children }
+					                        </div>
+					                    : null
+					                }
+			        			</span>
+		        			</div>
+        				: null
+	        		}
+		            
+	        		<Waypoint onEnter={() => { this.setState({ waypoint: true }) }} scrollableAncestor={ window } />
+        		
+        		</span>
         )
     }
 }
