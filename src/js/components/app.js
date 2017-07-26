@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-const ReactLazyBlur = require('react-lazy-blur')
+import ReactLazyBlur from 'react-lazy-blur'
 
 class App extends Component {
     constructor(props) {
@@ -154,4 +154,4 @@ class App extends Component {
     }
 }
 
-export default App
+export default class App

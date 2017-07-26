@@ -20,7 +20,7 @@ var config = {
             {
                 test: /\.js?$/,
                 exclude: /(node_modules|bower_components)/,
-                loaders: ['babel-loader',]
+                loaders: ['babel-loader']
             },
             {
                 test: /\.css$/,
