@@ -24,8 +24,8 @@ body {
 .react-lazy-blur,
 .react-lazy-blur .background,
 .react-lazy-blur .blur{
-	min-width: calc(100vw / 3);
-	min-height: calc(100vh / 3);
+	min-width: calc(100vw / 2);
+	min-height: calc(100vh / 2);
 }
 
 .react-lazy-blur .background,

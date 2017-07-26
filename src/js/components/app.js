@@ -144,6 +144,20 @@ export default class App extends Component {
                     </div>
                 </ReactLazyBlur>
                 
+                <ReactLazyBlur
+                    background={ require('../../images/jesus-kiteque-224069.lazy.jpg') }
+                    blur={ require('../../images/jesus-kiteque-224069.blur.jpg') }
+                    duration={ duration }>
+                    
+					<div
+						className="link-container"
+						onClick= { () => { window.open('https://unsplash.com/?photo=wn-KYaHwcis', '_blank') } }>
+	                    <div className="link">
+	                    	Larger ⤴
+	                    </div>
+                    </div>
+                </ReactLazyBlur>
+                
                 <div
                 	className="octocat"
                 	onClick= { () => { window.open('https://github.com/AndrusAsumets/react-lazy-blur', '_blank') } }>
