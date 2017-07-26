@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-const ReactLazyBlur = require('./react-lazy-blur').default
+const ReactLazyBlur = require('react-lazy-blur')
 
 class App extends Component {
     constructor(props) {

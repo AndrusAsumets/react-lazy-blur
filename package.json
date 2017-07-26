@@ -1,7 +1,7 @@
 {
   "name": "react-lazy-blur",
-  "version": "1.0.0",
-  "description": "Lazy background image loader for React.js",
+  "version": "1.0.1",
+  "description": "The laziest image loader for React.js",
   "main": "./src/js/components/react-lazy-blur.js",
   "scripts": {
     "blur": "node scripts/blur.js",
@@ -9,8 +9,15 @@
     "build": "webpack --config scripts/webpack.config.js",
     "publish": "node scripts/publish.js"
   },
-  "author": "",
-  "license": "",
+  "author": "Andrus Asumets / andrus@asumets.ee / http://asumets.ee",
+  "license": "WTFPL",
+  "keywords": [
+	"react-lazy-blur",
+	"lazy loader",
+	"background image"
+	"prefetch",
+	"blur"
+  ],
   "dependencies": {
     "react": "^15.0.2",
     "react-dom": "^15.0.2",
