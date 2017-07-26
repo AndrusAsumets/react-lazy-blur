@@ -1,6 +1,6 @@
 {
   "name": "react-lazy-blur",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "The laziest image loader for React.js",
   "main": "./bin/index.js",
   "scripts": {
