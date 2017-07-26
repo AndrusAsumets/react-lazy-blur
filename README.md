@@ -16,7 +16,7 @@ https://andrusasumets.github.io/react-lazy-blur
 
 ## Usage
 ```
-const ReactLazyBlur = require('./react-lazy-blur')
+import ReactLazyBlur from 'react-lazy-blur'
 
 ....
 
