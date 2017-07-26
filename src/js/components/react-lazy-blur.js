@@ -15,9 +15,9 @@ export default class ReactLazyBlur extends React.Component {
         }
     }
 
-    componentDidMount() {
-        if (!this.props.background) return console.log('ThisLazy warning: currently too lazy to look for a background image. Please provide one.')
-        else this.lazy()
+    shouldComponentUpdate(nextProps, nextState) {
+        if (this.state.waypoint !== nextState.waypoint && !nextState.loading && !nextState.loaded) this.lazy()
+        return true
     }
 
     lazy() {
