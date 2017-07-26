@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Waypoint from 'react-waypoint'
 
-export default class ReactLazyBlur extends Component {
+const Module = ReactLazyBlur extends Component {
     constructor(props) {
         super(props)
 
@@ -108,3 +108,5 @@ export default class ReactLazyBlur extends Component {
         )
     }
 }
+
+module.exports = Module
