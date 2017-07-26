@@ -1,5 +1,3 @@
-# react-lazy-blur - The laziest image loader for React.js
-
 ## Demo
 https://andrusasumets.github.io/react-lazy-blur
 
