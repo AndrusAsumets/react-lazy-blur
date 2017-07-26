@@ -78,7 +78,7 @@ export default class ReactLazyBlur extends React.Component {
     render() {
         const { children } = this.props
         const { background, blur, waypoint } = this.state
-        const className ? this.props.className : this.props.className + ' react-lazy-blur' : 'react-lazy-blur'
+        const className = this.props.className ? this.props.className + ' react-lazy-blur' : 'react-lazy-blur'
         
 		return (
 			<span>
