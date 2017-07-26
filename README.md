@@ -46,7 +46,7 @@ const ReactLazyBlur = require('./react-lazy-blur')
 `npm run build` (optional)
 
 ## License: 
-Do What the Fuck You Want To Public Licens
+Do What the Fuck You Want To Public License
 
 ## Author: 
 Andrus Asumets / andrus@asumets.ee / www.asumets.ee
