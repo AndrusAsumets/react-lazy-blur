@@ -37,7 +37,7 @@ import ReactLazyBlur from 'react-lazy-blur'
 `horizontal`: (boolean, optional) Trigger prefetching when element is being displayed horizontally. Defaults to false.  
 `children`: (component, optional) React.js component or a HTML element.  
 
-## Blurring / Contributing
+## Blurring
 `npm install`  
 `npm run blur` (blur.js is situated in /scripts folder will scan for images containing .lazy tag inside file names (but ignores the rest), then converts said files into small and blurry (look for images including .blur tags).  
 `npm run dev`  
