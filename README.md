@@ -41,7 +41,7 @@ const ReactLazyBlur = require('./react-lazy-blur')
 
 ## Blurring / Contributing
 `npm install`  
-`npm run blur` (blur.js situated in /scripts folder will scan for images containing .lazy tag inside file names (but ignores the rest), then converts said files into small and blurry (look for images including .blur tags).  
+`npm run blur` (blur.js is situated in /scripts folder will scan for images containing .lazy tag inside file names (but ignores the rest), then converts said files into small and blurry (look for images including .blur tags).  
 `npm run dev`  
 `npm run build` (optional)
 
