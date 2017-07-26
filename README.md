@@ -10,7 +10,7 @@ https://andrusasumets.github.io/react-lazy-blur
 * Includes a complete Webpack example on how to integrate blurred placeholders for dev and production (again, see the blurring section).
 
 ## Installation
-```npm install react-lazy-blur```  
+```npm install react-lazy-blur```
 
 ## Usage
 ```
@@ -18,11 +18,10 @@ import ReactLazyBlur from 'react-lazy-blur'
 
 ....
 
-
 <ReactLazyBlur
     background={ require('../../images/my-background-image.lazy.jpg') }
     blur={ require('../../images/my-blurred-placeholder-image.blur.jpg') }
-    duration={ duration }>
+    duration={ 1000 }>
 
     <YourPrefferedComponent
         ... optionally your content here
@@ -32,19 +31,20 @@ import ReactLazyBlur from 'react-lazy-blur'
 ```
 
 ## Props
-`background` (string, required): Import an image string and pass it as an argument.  
-`blur` : (string, optional) Import a processed and blurred background image and use it as a placeholder while the full-sized image is being prefetched.  
-`duration`: (integer, optional) The length of fade after prefetching the image in milliseconds. Defaults to 500ms.  
-`children`: (component, optional) React.js component or a HTML element. 
+`background` (string, required): Import an image string and pass it as an argument.
+`blur` : (string, optional) Import a processed and blurred background image and use it as a placeholder while the full-sized image is being prefetched.
+`duration`: (integer, optional) The length of fade after prefetching the image in milliseconds. Defaults to 500ms.
+`horizontal`: (boolean, optional) Trigger prefetching when element is being displayed horizontally. Defaults to false.
+`children`: (component, optional) React.js component or a HTML element.
 
 ## Blurring / Contributing
-`npm install`  
-`npm run blur` (blur.js is situated in /scripts folder will scan for images containing .lazy tag inside file names (but ignores the rest), then converts said files into small and blurry (look for images including .blur tags).  
-`npm run dev`  
+`npm install`
+`npm run blur` (blur.js is situated in /scripts folder will scan for images containing .lazy tag inside file names (but ignores the rest), then converts said files into small and blurry (look for images including .blur tags).
+`npm run dev`
 `npm run build` (optional)
 
-## License: 
+## License:
 Do What the Fuck You Want To Public License
 
-## Author: 
+## Author:
 Andrus Asumets / andrus@asumets.ee / www.asumets.ee

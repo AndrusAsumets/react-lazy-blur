@@ -76,13 +76,13 @@ export default class ReactLazyBlur extends React.Component {
     }
 
     render() {
-        const { children } = this.props
+        const { children, horizontal = false } = this.props
         const { background, blur, waypoint } = this.state
         const className = this.props.className ? this.props.className + ' react-lazy-blur' : 'react-lazy-blur'
         
 		return (
 			<span>
-				<Waypoint onEnter={() => { this.setState({ waypoint: true }) }} scrollableAncestor={ window } />
+				<Waypoint horizontal={ horizontal } onEnter={() => { this.setState({ waypoint: true }) }} scrollableAncestor={ window } />
 				
 				<div className={ className } style={{ position: 'relative' }}>
 					<div className={ 'react-lazy-blur background' } style={ background }>
@@ -98,7 +98,7 @@ export default class ReactLazyBlur extends React.Component {
 					}
 				</div>
 				
-				<Waypoint onEnter={() => { this.setState({ waypoint: true }) }} scrollableAncestor={ window } />
+				<Waypoint horizontal={ horizontal } onEnter={() => { this.setState({ waypoint: true }) }} scrollableAncestor={ window } />
 			</span>
 		)
     }
