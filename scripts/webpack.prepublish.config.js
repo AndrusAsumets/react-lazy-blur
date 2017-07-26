@@ -3,7 +3,11 @@ var webpack = require('webpack')
 
 module.exports = {
     entry: './src/js/components/react-lazy-blur.js',
-    output: { path: path.join(__dirname, '../', 'bin'), filename: 'index.js' },
+    output: {
+    	path: path.join(__dirname, '../', 'bin'),
+    	filename: 'index.js',
+    	libraryTarget: 'commonjs2'
+    },
     module: {
         loaders: [
             {
@@ -13,4 +17,7 @@ module.exports = {
             },
         ]
     },
-};
+	externals: {
+		'react': 'commonjs react'
+	}
+}
