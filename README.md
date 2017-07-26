@@ -39,7 +39,7 @@ const ReactLazyBlur = require('./react-lazy-blur')
 `duration`: (integer, optional) The length of fade after prefetching the image in milliseconds. Defaults to 500ms.  
 `children`: (component, optional) React.js component or a HTML element. 
 
-## Blurring
+## Blurring / Contributing
 `npm install`  
 `npm run blur` (blur.js situated in /scripts folder will scan for images containing .lazy tag inside file names (but ignores the rest), then converts said files into small and blurry (look for images including .blur tags).  
 `npm run dev`  
