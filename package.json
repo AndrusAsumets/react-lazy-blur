@@ -4,6 +4,7 @@
   "description": "The laziest image loader for React.js",
   "main": "./bin/index.js",
   "scripts": {
+  	"lazy": "node scripts/lazy.js",
     "blur": "node scripts/blur.js",
     "dev": "node scripts/development.js",
     "build": "webpack --config scripts/webpack.config.js",
