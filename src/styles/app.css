@@ -6,11 +6,6 @@ body {
 	overflow-x: hidden;
 }
 
-.app {
-	display: flex;
-	flex-wrap: wrap;
-}
-
 .react-lazy-blur {
 	position: relative;
 }
@@ -22,8 +17,8 @@ body {
 .react-lazy-blur,
 .react-lazy-blur .background,
 .react-lazy-blur .blur{
-	min-width: calc(100vw / 2);
-	min-height: calc(100vh / 2);
+	min-width: 100vw;
+	min-height: 100vh;
 }
 
 .react-lazy-blur .background,
