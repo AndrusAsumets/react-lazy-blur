@@ -19,8 +19,8 @@ import ReactLazyBlur from 'react-lazy-blur'
 ....
 
 <ReactLazyBlur
-    background={ require('../../images/my-background-image.lazy.jpg') }
-    blur={ require('../../images/my-blurred-placeholder-image.blur.jpg') }
+    background={ 'https://example.com/images/full-size-image.jpg' }
+    blur={ 'https://example.com/images/blurred-placeholder.jpg' }
     duration={ 1000 }>
 
     <YourPrefferedComponent
