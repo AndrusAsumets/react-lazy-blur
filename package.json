@@ -4,11 +4,10 @@
   "description": "The laziest image loader for React.js",
   "main": "./bin/index.js",
   "scripts": {
-  	"lazy": "node scripts/lazy.js",
-    "blur": "node scripts/blur.js",
-    "dev": "node scripts/development.js",
-    "build": "webpack --config scripts/webpack.config.js",
-    "publish": "webpack --config scripts/webpack.config.js && webpack --config scripts/webpack.prepublish.config.js && node scripts/publish.js"
+  	"lazy-blur": "node scripts/lazy.js && node scripts/blur.js",
+	"dev": "node scripts/development.js",
+	"build": "webpack --config scripts/webpack.config.js",
+	"publish": "webpack --config scripts/webpack.config.js && webpack --config scripts/webpack.prepublish.config.js && node scripts/publish.js"
   },
   "author": "Andrus Asumets / andrus@asumets.ee / http://asumets.ee",
   "license": "WTFPL",

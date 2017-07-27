@@ -30,7 +30,7 @@ module.exports = function(ip) {
 	                exclude: /node_modules/
 	            },
 	            {
-	                test: /\.(jpe?g)$/,
+	                test: /\.(jpe?g|png)$/,
 	                loader: 'url-loader?limit=10000'
 	            }
 	        ]

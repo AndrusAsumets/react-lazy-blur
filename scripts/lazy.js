@@ -9,8 +9,9 @@ const process = async function(i) {
 		const regex = /\.(jpe?g||png)$/
 		
 		if (
-			regex.test(file) == false &&
-			/\.(.blur)$/.test(file) == false
+			regex.test(file) == false ||
+			file.includes('.lazy') || 
+			file.includes('.blur')
 		) return process(i + 1)
 		
 		console.log('Lazying:', folder + file)

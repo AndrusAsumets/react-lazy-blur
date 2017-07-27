@@ -32,7 +32,7 @@ var config = {
 			    loader: 'file-loader'
             },
             {
-                test: /\.(jpe?g)(\?.*)?$/,
+                test: /\.(jpe?g|png)(\?.*)?$/,
                 exclude: /\B.lazy\B/,
                 loader: 'url-loader?limit=10000'
             }

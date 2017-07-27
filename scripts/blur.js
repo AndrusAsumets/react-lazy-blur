@@ -7,7 +7,10 @@ const process = async function(i) {
 	if(i < files.length ) {
 		const file = files[i]
 		
-		if (file.indexOf('.lazy.') === -1) return process(i + 1)
+		if (
+			file.indexOf('.lazy.') === -1 ||
+			file.includes('.blur')
+			) return process(i + 1)
 		
 		console.log('Blurring:', folder + file)
 		const image = await Jimp.read(folder + file).catch((err) => { return console.log(err) })
