@@ -1,6 +1,4 @@
-import React, {
-    Component
-} from 'react'
+import React, { Component } from 'react'
 import Waypoint from 'react-waypoint'
 
 export default class ReactLazyBlur extends React.Component {
@@ -14,6 +12,15 @@ export default class ReactLazyBlur extends React.Component {
             loaded: false
         }
     }
+    
+    componentWillMount() {
+        //display blurred image in the place of background before load
+        this.setState({
+            background: {
+                backgroundImage: `url(${ this.props.blur })`
+            }
+        })
+    }
 
     shouldComponentUpdate(nextProps, nextState) {
         if (this.state.waypoint !== nextState.waypoint && !nextState.loading && !nextState.loaded) this.lazy()
@@ -24,14 +31,6 @@ export default class ReactLazyBlur extends React.Component {
         const { background, blur } = this.props
         const duration = this.props.duration || 500
         const self = this
-
-        //display blurred image on the place of background before load
-        self.setState({
-            loading: true,
-            background: {
-                backgroundImage: `url(${ blur })`
-            }
-        })
 
         //start loading background image
         const img = new Image()

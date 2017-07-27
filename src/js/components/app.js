@@ -109,6 +109,5 @@ function parseBlur(image) {
 	const prefix = image.split('.lazy')[0]
 	const suffix = image.split('.lazy')[1]
 	const fileName = prefix + '.blur' + suffix
-	console.log(fileName)
 	return fileName
 }
